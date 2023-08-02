@@ -23,7 +23,7 @@ spec:
     spec: # Pod spec
       containers:
       - name: amazon-container
-        image: ooghenekaro/amazon:3
+        image: tomotade/amazon:latest
         ports:
         - containerPort: 3000
         
@@ -36,7 +36,7 @@ metadata:
   labels:
     app: amazon-app
 spec:
-  type: LoadBalancer
+#  type: LoadBalancer
   ports:
   - port: 80
     targetPort: 3000
